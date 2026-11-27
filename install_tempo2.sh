@@ -34,7 +34,11 @@ fi
 # tempo2's jpleph.c `typedef int bool;`; gcc >= 15 defaults to C23 on its own, so
 # ac_cv_prog_cc_c23=no (which stops autoconf adding -std=gnu23) is not enough.
 # The flag goes in CC, not CFLAGS, because tempo2's build also passes CFLAGS to the C++ compiler.
-./configure --prefix=$prefix ac_cv_prog_cc_c23=no CC="${CC:-gcc} -std=gnu17"
+# glibc < 2.34 keeps dlopen and dlclose in libdl, which LT_LIB_DLLOAD (removed above) would link.
+if [[ "$(uname -s)" == "Linux" ]]; then
+  extra_libs="-ldl"
+fi
+./configure --prefix=$prefix ac_cv_prog_cc_c23=no CC="${CC:-gcc} -std=gnu17" LIBS="${LIBS:+$LIBS }${extra_libs:-}"
 make
 make install
 cp -r T2runtime/* $TEMPO2
