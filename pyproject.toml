@@ -50,6 +50,7 @@ dependencies = [
     "scipy",
     "matplotlib",
     "ephem",
+    "platformdirs",
 ]
 
 [project.optional-dependencies]
@@ -70,6 +71,14 @@ dev = [
 
 [tool.setuptools]
 include-package-data = true
+
+[tool.setuptools.package-data]
+# TEMPO2_COPYING exists only in wheel builds, which bundle the GPL tempo2 library
+libstempo = ["tempo2_runtime.json", "TEMPO2_COPYING"]
+
+[tool.setuptools.exclude-package-data]
+# needed to build the extension, not to run it
+libstempo = ["*.pyx", "*.cpp", "*.h"]
 
 [tool.setuptools.packages.find]
 include = [

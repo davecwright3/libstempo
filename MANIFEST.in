@@ -8,6 +8,11 @@ include libstempo/libstempo.pyx
 include libstempo/libstempo.cpp
 include libstempo/GWsim-stub.h
 include libstempo/t2fit-stub.h
+include libstempo/_find_tempo2.py
+include libstempo/_runtime.py
+include libstempo/fetch_runtime.py
+include libstempo/tempo2_runtime.json
+include libstempo/utils.py
 include libstempo/eccUtils.py
 include libstempo/emcee.py
 include libstempo/fit.py
@@ -28,3 +33,6 @@ include libstempo/data/J1909-3744_NANOGrav_dfg+12.tim
 include tests/test_fakepulsar.py
 include tests/test_imports.py
 include tests/test_pulsar.py
+include tests/test_runtime.py
+include tests/test_sandbox.py
+include tools/make_runtime_manifest.py
