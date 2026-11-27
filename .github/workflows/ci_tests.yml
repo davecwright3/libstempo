@@ -61,6 +61,73 @@ jobs:
       run: make test
 
 
+  wheels:
+    name: Wheels on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        # no macOS arm64: tempo2 needs a long double wider than 64 bits
+        os: [ubuntu-latest, ubuntu-24.04-arm, macos-15-intel]
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    - name: Build and test wheels
+      uses: pypa/cibuildwheel@v4.3.5
+    - name: Check wheel contents
+      run: python3 tools/check_wheel.py wheelhouse/*.whl
+    - uses: actions/upload-artifact@v4
+      with:
+        name: wheels-${{ matrix.os }}
+        path: wheelhouse/*.whl
+
+
+  wheel-offline:
+    name: Wheel tests without network
+    needs: [wheels]
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: actions/download-artifact@v4
+      with:
+        name: wheels-ubuntu-latest
+        path: wheelhouse
+    - name: Fill the runtime cache, then test with networking disabled
+      run: tools/test_wheel_offline.sh wheelhouse/*-cp312-cp312-manylinux*x86_64*.whl
+
+
+  wheel-vs-source:
+    name: Wheel results equal source-build results
+    needs: [wheels]
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+    - uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+    - uses: actions/download-artifact@v4
+      with:
+        name: wheels-ubuntu-latest
+        path: wheelhouse
+    - name: Install tempo2 from source
+      run: |
+        ./install_tempo2.sh
+        echo "TEMPO2_PREFIX=$HOME/.local" >> "$GITHUB_ENV"
+    - name: Compare residuals
+      # both installs read the same runtime data, so any difference comes from the compiled code
+      run: |
+        export TEMPO2=$HOME/.local/share/tempo2
+        python -m venv venv-source && venv-source/bin/pip install -q .
+        python -m venv venv-wheel && venv-wheel/bin/pip install -q wheelhouse/*-cp312-cp312-manylinux*x86_64*.whl
+        mkdir cmp && cd cmp
+        ../venv-source/bin/python ../tools/compare_residuals.py dump source.json
+        ../venv-wheel/bin/python ../tools/compare_residuals.py dump wheel.json
+        python ../tools/compare_residuals.py compare source.json wheel.json --tol-ns 1
+
+
   build:
     needs: [tests]
     name: Build source distribution
@@ -96,7 +163,7 @@ jobs:
 
 
   deploy:
-    needs: [tests, build]
+    needs: [tests, build, wheels, wheel-offline, wheel-vs-source]
     runs-on: ubuntu-latest
     if: github.event_name == 'release'
     steps:
@@ -109,11 +176,11 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install setuptools wheel twine
-    - name: Download wheel/dist from build
+    - name: Download the sdist and wheels
       uses: actions/download-artifact@v4
       with:
-        name: dist
         path: dist
+        merge-multiple: true
     - name: Build and publish
       env:
         TWINE_USERNAME: ${{ secrets.PYPI_USERNAME }}

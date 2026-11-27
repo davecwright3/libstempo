@@ -42,6 +42,8 @@ fi
 make
 make install
 cp -r T2runtime/* $TEMPO2
+mkdir -p $prefix/share/doc/tempo2
+cp COPYING $prefix/share/doc/tempo2/
 cd ..
 
 rm -rf psrsoft-tempo2-*

@@ -74,3 +74,9 @@ target/
 
 # vscode
 .vscode
+
+# cibuildwheel output
+wheelhouse/
+
+# copied in by wheel builds (cibuildwheel before-all)
+libstempo/TEMPO2_COPYING
