@@ -24,7 +24,24 @@ conda install -c conda-forge libstempo
 
 ### pip Install
 
-To use `libstempo` with pip (or from source), tempo2 must be installed as a prerequisite. Currently there are two recommended methods to do this.
+On Linux (x86_64 with glibc 2.28 or newer, or musl) and on Intel macOS 15 or newer, `pip install libstempo` installs a wheel that already contains tempo2. No separate tempo2 install is needed.
+
+tempo2 needs runtime data (clock corrections, Earth orientation, observatory and ephemeris files). The wheel does not include them. On the first import, `libstempo` downloads about 63 MB of files every run needs from the tempo2 release it was built with into a per-user cache. It checks each file against a SHA-256 hash. Later imports reuse the cache without using the network. Each planetary ephemeris (9 to 18 MB) is downloaded the first time a pulsar uses it.
+
+- If `TEMPO2` is set, `libstempo` uses that runtime directory and downloads nothing.
+- `LIBSTEMPO_CACHE_DIR` changes where the cache lives, for example a shared filesystem.
+- On machines without network access, such as cluster compute nodes, fill the cache beforehand from a machine that has it:
+    ```bash
+    python -m libstempo.fetch_runtime            # files every run needs
+    python -m libstempo.fetch_runtime --ephem DE440
+    python -m libstempo.fetch_runtime --all      # also every planetary ephemeris
+    ```
+
+tempo2 is licensed under the GPL, so the wheels, which contain it, are distributed under the GPL. Its license is in `libstempo/TEMPO2_COPYING` inside the wheel. `libstempo`'s own code is MIT-licensed.
+
+### Installing from source
+
+On other platforms (such as Apple silicon Macs, where tempo2 does not work because `long double` is only 64 bits), or with `pip install --no-binary libstempo libstempo`, `libstempo` builds from source and tempo2 must be installed as a prerequisite. Currently there are two recommended methods to do this.
 
 1. Install via script. 
     ```bash
