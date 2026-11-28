@@ -1,0 +1,1030 @@
+{
+ "files": {
+  "atmosphere/pks.sap": {
+   "lazy": false,
+   "sha256": "0914f2e01901851091940c245300eb4c4e962a553119b891becc62367c6a26d3",
+   "size": 130
+  },
+  "atmosphere/pks.zwd": {
+   "lazy": false,
+   "sha256": "ece1466813980e84ef2705e497210c1efd7e13bc5b203779df43335071a9222d",
+   "size": 96
+  },
+  "clock/README": {
+   "lazy": false,
+   "sha256": "2f58c1abb890422996aaf66db71507a400e575d90c5d171a66245ff4f8d919d1",
+   "size": 82
+  },
+  "clock/ao2gps.clk": {
+   "lazy": false,
+   "sha256": "41e37426cd251033d56271e59a1d70ea9bb356d1ed040e474ecb1cff9585ba7b",
+   "size": 206819
+  },
+  "clock/ao2nist.clk": {
+   "lazy": false,
+   "sha256": "0226f490a76a5ae604939b88efef6ef269749ce85dc764619b9d910485fef33c",
+   "size": 23796
+  },
+  "clock/aus2utc.clk": {
+   "lazy": false,
+   "sha256": "a2545f219771b512761b4975a0f17cda1ce16d71ebe4a95142fbaf0682dea3d2",
+   "size": 122475
+  },
+  "clock/bipmnist.14": {
+   "lazy": false,
+   "sha256": "d94863c5824ec80180b7eba9323d723ed8dd7e84a654f62c2e8b9c12f376d8f4",
+   "size": 34804
+  },
+  "clock/ced2gps.clk": {
+   "lazy": false,
+   "sha256": "1035ffeab100b737a2492ff55f83b73f88265c4287dfe3b690b5b5ab25f300e2",
+   "size": 9116708
+  },
+  "clock/eff2gps.clk": {
+   "lazy": false,
+   "sha256": "8d73168d713531c3ed7a1a3b14d16b100fd8bff8bd9512ff31b2feebd32bc424",
+   "size": 112826
+  },
+  "clock/effedd2gps.clk": {
+   "lazy": false,
+   "sha256": "a0b081aaea8501767fa591ab45f4db148e114f61084309c0bb7c4cd58312c39f",
+   "size": 316442
+  },
+  "clock/effix2gps.clk": {
+   "lazy": false,
+   "sha256": "a3dca713b2cab1a2f1daa1252bee92d949537650ce824512854a1abd184d22de",
+   "size": 300262
+  },
+  "clock/gb1402nist.clk": {
+   "lazy": false,
+   "sha256": "25f1a04cdd80a5848f393d10fc1efab48fb95265396cd7a02aeddf165d2622a3",
+   "size": 40809
+  },
+  "clock/gb8532nist.clk": {
+   "lazy": false,
+   "sha256": "2fe7d2992a7a5f32edd5e363b224b6819114dae91e1d76f4af6fe6ff48b82757",
+   "size": 404
+  },
+  "clock/gbt2gps.clk": {
+   "lazy": false,
+   "sha256": "92e1daa7d297e4bc0a29a40f01ddca65be52eba826d1b5a63ba8054167166d55",
+   "size": 169809
+  },
+  "clock/gps2gps_usno.clk": {
+   "lazy": false,
+   "sha256": "55e806258932e74f0f0cb3dab24707f3911930abea86269c7f81cf42d65385fb",
+   "size": 41
+  },
+  "clock/gps2gpst.clk": {
+   "lazy": false,
+   "sha256": "cabd3334962915b75f2ee9275715171638578209e3aa9bcad5b08d409b0560c9",
+   "size": 381
+  },
+  "clock/gps_usno2utc.clk": {
+   "lazy": false,
+   "sha256": "ab8f0a4955594d906b66cf357aa99fa15867613fe5a65f2483cb065dd7ba4c26",
+   "size": 141354
+  },
+  "clock/gpst2utc.clk": {
+   "lazy": false,
+   "sha256": "4f5fca14e843f748dc2a8d34187982f2e5faa6c6d36188e62f8795a4e42881de",
+   "size": 322665
+  },
+  "clock/hob2gps.clk": {
+   "lazy": false,
+   "sha256": "0101592e48ade4226df486bc67118d3f2f98bbd174938770d7e4dc7ee9f301c9",
+   "size": 24210759
+  },
+  "clock/jb2gps.clk": {
+   "lazy": false,
+   "sha256": "d4b3ddb5543ba8b9dc02a8261c42a59494c9915dc004f803d48bb1ce3058b37c",
+   "size": 4584504
+  },
+  "clock/jb422jb.clk": {
+   "lazy": false,
+   "sha256": "cf7b43341f51f43a6a5dfce5f67a4b9f0b6ea38d0a4782db5395ab9ca417cb57",
+   "size": 83
+  },
+  "clock/jb422jbafb.clk": {
+   "lazy": false,
+   "sha256": "365c7165010ea9eca774a86c2ae9ed8ff40955f51c2f7edeac11623557c34459",
+   "size": 89
+  },
+  "clock/jbafb2gps.clk": {
+   "lazy": false,
+   "sha256": "635dd3e5ecc9ab93193804736ca73283bb482e8ad695c5e0364482ceae575b2c",
+   "size": 49
+  },
+  "clock/jbafb2utc.clk": {
+   "lazy": false,
+   "sha256": "4a3c614e10bece46ce971f80b1ef8e2d3509a4c7661ca1323f8546076de35829",
+   "size": 44
+  },
+  "clock/jbdfb2jb.clk": {
+   "lazy": false,
+   "sha256": "1378ac96c8d275c3e48544abe826cc265805fb4c3f7164846a000ed1243ceb7a",
+   "size": 1466
+  },
+  "clock/jbm42gps.clk": {
+   "lazy": false,
+   "sha256": "ae09f33b75a520096d4fac2d378080ce11f3030ac85708303b27befdd68c6629",
+   "size": 8455
+  },
+  "clock/jbmk22jb.clk": {
+   "lazy": false,
+   "sha256": "ea6e8ff409ffd3977477781013720a983c2e0c5bf3c961969580ba8dbaa05d03",
+   "size": 78
+  },
+  "clock/jbmk2dfb2jbdfb.clk": {
+   "lazy": false,
+   "sha256": "e0a7eaeb7de77861c2b4060f9aaf4af108154af2c88d5f65096a8f6a199cb93e",
+   "size": 81
+  },
+  "clock/jbmk2roach2jbroach.clk": {
+   "lazy": false,
+   "sha256": "b43e3422b7c9e8b2694b3c5911432046120a4b1ba374fdb53e8025669dee0e97",
+   "size": 85
+  },
+  "clock/jbroach2jb.clk": {
+   "lazy": false,
+   "sha256": "55e3f92250d228d24c26b25426fc1c4929e57eb8915ede604a0b2dc52ceea6ec",
+   "size": 934
+  },
+  "clock/leap.sec": {
+   "lazy": false,
+   "sha256": "c7c87ec9bfa14e0ddb4d43e90a866e5a8617cfc35cc352530c08979cd868889a",
+   "size": 175
+  },
+  "clock/leap2effix.clk": {
+   "lazy": false,
+   "sha256": "d8a46bf592b5a43e40e6e8c1c9383892f8869d6b21bfdf612c846c37f388caba",
+   "size": 389
+  },
+  "clock/mk2utc.clk": {
+   "lazy": false,
+   "sha256": "9b7a1ee0273db273726d38a6b2fa93000025d7a07307e6721312ac4733be8723",
+   "size": 5332696
+  },
+  "clock/mo2gps.clk": {
+   "lazy": false,
+   "sha256": "a7ac099e09db6b79152b1da2071c056ff90ed9a17507333681ce56d80b0e245f",
+   "size": 6339
+  },
+  "clock/ncy2gps.clk": {
+   "lazy": false,
+   "sha256": "71083f79b36016297a1a80908658549dd88047629e278925053c1e7f73209800",
+   "size": 43
+  },
+  "clock/ncyobs2obspm.clk": {
+   "lazy": false,
+   "sha256": "7d7d3aabd4ca7ca07792aeac442bc05f8666a10d07375bb058d829d2c7d14e8b",
+   "size": 555227
+  },
+  "clock/nist2tai.clk": {
+   "lazy": false,
+   "sha256": "888baeb63e28377a4d9820e47ef2e2d6ebe5307fc7d62d9c9a9a7bcca78a2e41",
+   "size": 26920
+  },
+  "clock/nist2tt_nist.clk": {
+   "lazy": false,
+   "sha256": "b6455d27341e6c4d09ff4f6260bd91db3a6dd424716bc55f89e0bcc64e55247a",
+   "size": 2922
+  },
+  "clock/nist2utc.clk": {
+   "lazy": false,
+   "sha256": "a25ebc8f954f6f21f68948e6f84a2b79664496e6927e966a7b4b67c8de59ef46",
+   "size": 75817
+  },
+  "clock/obspm2gps.clk": {
+   "lazy": false,
+   "sha256": "f1a89b4bb20e4ddaab9b9dfcaa576c9eb9ee783a7305ceed64a8895ebbc7262c",
+   "size": 233465
+  },
+  "clock/obspm2utc.clk": {
+   "lazy": false,
+   "sha256": "7e58d72b7f452cf23b5dc23f9c0c767735ea0fddf91cef1bb8b057a8a338340e",
+   "size": 113
+  },
+  "clock/parsebipm2019.py": {
+   "lazy": false,
+   "sha256": "49ccde4902e04c04ec2679fb64ea48550cfd3549416d7512b83680592e0e384b",
+   "size": 1476
+  },
+  "clock/pks2aus.clk": {
+   "lazy": false,
+   "sha256": "268511fe66a4d379d407bdb0a2b80e347f2f352fa2e36a41c0add3a564e66735",
+   "size": 6044865
+  },
+  "clock/pks2gps.clk": {
+   "lazy": false,
+   "sha256": "4592e421f977f1d90be0ba0f3bbe7fc7a004c06189226cae4436ff12e6f73198",
+   "size": 1309868
+  },
+  "clock/pks2tid.clk": {
+   "lazy": false,
+   "sha256": "f64887e8c7ea5a9a538d6fbb64205006e2dd61f366dd903c93a2e806a3527d5e",
+   "size": 73961
+  },
+  "clock/pks2tt_toasim.clk": {
+   "lazy": false,
+   "sha256": "ec768e77d9219602a778eebf71c035a3dee4510622e258b7890970a090451f05",
+   "size": 108
+  },
+  "clock/pks_aus.out": {
+   "lazy": false,
+   "sha256": "f38235dda73416c13877cffa494184a771af33cbba1f39b5e5ef978ce11bf3e4",
+   "size": 28028
+  },
+  "clock/pks_aus1.out": {
+   "lazy": false,
+   "sha256": "1d627bebd0434d23c356fbf4734ca36a9c6a7f62c0feb3a90e602427afec2a4f",
+   "size": 31640
+  },
+  "clock/pks_aus_utc.out": {
+   "lazy": false,
+   "sha256": "2f0e3d3fe12654330c4e0e28905e0e7cec98924a01c2b1a324b9c72a6f139065",
+   "size": 31640
+  },
+  "clock/pks_gps.out": {
+   "lazy": false,
+   "sha256": "327affd1156c3ba41fcde6468fe955e03ffafbc8e18380a6d7171888083adaac",
+   "size": 28028
+  },
+  "clock/pks_gps1.out": {
+   "lazy": false,
+   "sha256": "3c4366cdf0c488934d6904c11ba31a2ea76d201004e7bde4bf9de6ffab4d342a",
+   "size": 31640
+  },
+  "clock/pks_gps_utc.out": {
+   "lazy": false,
+   "sha256": "7326563585e847846bc9881157ff515cfd922d0d02510862f34e6ccfdbac4e09",
+   "size": 31640
+  },
+  "clock/pks_throughaus_gps.out": {
+   "lazy": false,
+   "sha256": "2f3219fb763b799a7a0397ab80d4d929dd7b31f86785ebff7e4a55d3e7fc7bce",
+   "size": 31640
+  },
+  "clock/ptb2tai.clk": {
+   "lazy": false,
+   "sha256": "bd644439f9537611b2337248e00e2c16cf315732da43ca569107225ac039a15a",
+   "size": 26919
+  },
+  "clock/srt2gps.clk": {
+   "lazy": false,
+   "sha256": "1d60523d55e801aa4983e190e509cf7cd3dfd76ebf8550d60ac4f36edfd04777",
+   "size": 92797
+  },
+  "clock/tai2tt_bipm01.clk": {
+   "lazy": false,
+   "sha256": "a46df9fc4b0c1ed82aae205a92acf319ad09a6173a76a44cc1486dc9ceb0c214",
+   "size": 19662
+  },
+  "clock/tai2tt_bipm05.clk": {
+   "lazy": false,
+   "sha256": "741e6292d8f738a4e2605922a09f2599b8b687f421a6f1873ab933ab271a1a82",
+   "size": 23507
+  },
+  "clock/tai2tt_bipm06.clk": {
+   "lazy": false,
+   "sha256": "12b85d43646942c716af64379088b7796c6a704ca55f9ba06bef4b0a3b0c030b",
+   "size": 24286
+  },
+  "clock/tai2tt_bipm2003.clk": {
+   "lazy": false,
+   "sha256": "4cd68afc42b88e0b375d70c75a84409febac24ef6e77e6918635423d28b54894",
+   "size": 22021
+  },
+  "clock/tai2tt_bipm2004.clk": {
+   "lazy": false,
+   "sha256": "211e6514a3f10f839c19df73fa48f9ff0216e69e3c03b08ce8c8913c8a4e5240",
+   "size": 22542
+  },
+  "clock/tai2tt_bipm2004ext.clk": {
+   "lazy": false,
+   "sha256": "f951785a160a2b1bf9ff3c73f9e9503499738665c9a23a49e319b9b227b9b7d4",
+   "size": 22681
+  },
+  "clock/tai2tt_bipm2010.clk": {
+   "lazy": false,
+   "sha256": "ac9d5bbc493ba259d0519ce4818dda34a1f077a4cb48186a1f624058651ff161",
+   "size": 28129
+  },
+  "clock/tai2tt_bipm2011.clk": {
+   "lazy": false,
+   "sha256": "66682444379a4ffd938fd93f3219503f29fad0ab6e7392ddd2f94fea211d0cde",
+   "size": 29683
+  },
+  "clock/tai2tt_bipm2012.clk": {
+   "lazy": false,
+   "sha256": "65b9d84dafe26bef5205e7f1bb6c885804aefa826c202fd00787cfaf6459dfd3",
+   "size": 30271
+  },
+  "clock/tai2tt_bipm2013.clk": {
+   "lazy": false,
+   "sha256": "b87cf53a3e1ba5230056fd2a3b3341061b0f23c324fd0841faa1e9efd6984c6c",
+   "size": 29662
+  },
+  "clock/tai2tt_bipm2014.clk": {
+   "lazy": false,
+   "sha256": "830df3ccf2128b4f5ea9de81ba6f7f594ded18d7e9c6226bfee06de0941b52dc",
+   "size": 30395
+  },
+  "clock/tai2tt_bipm2015.clk": {
+   "lazy": false,
+   "sha256": "038dae3e947e86a4ae0ab079d109bedca5797152d3507fc632389e37df22d764",
+   "size": 31151
+  },
+  "clock/tai2tt_bipm2016.clk": {
+   "lazy": false,
+   "sha256": "587b24a9ff4dc87ece267b8f5e206eb14cb3652751950d110720ed702ddbc7a3",
+   "size": 29141
+  },
+  "clock/tai2tt_bipm2017.clk": {
+   "lazy": false,
+   "sha256": "b0154d6da6faac6b71e0e3131090b58abe6e96e0ff6618f9c745267a277c087e",
+   "size": 36828
+  },
+  "clock/tai2tt_bipm2018.clk": {
+   "lazy": false,
+   "sha256": "47869a659f5c77b7d22e51362d86d908f9a27a22bbf5375160735b7b2bf6dbca",
+   "size": 33546
+  },
+  "clock/tai2tt_bipm2019.clk": {
+   "lazy": false,
+   "sha256": "a7626d10fc51e68ace910373ecb425d8e30d714de47cb84feb6e9222e982271d",
+   "size": 36459
+  },
+  "clock/tai2tt_bipm2020.clk": {
+   "lazy": false,
+   "sha256": "7419cfc442f207c5e6c15bd151720891e532f96c8641aae4edc076a28c0bb1b9",
+   "size": 73787
+  },
+  "clock/tai2tt_bipm2021.clk": {
+   "lazy": false,
+   "sha256": "14a85a50f4ae37a0202202f55a9c8ee5f10b36caec6cfdea4220115f151125f5",
+   "size": 74785
+  },
+  "clock/tai2tt_bipm2022.clk": {
+   "lazy": false,
+   "sha256": "3008fb0db51eea448aeb913dd9329c59aea76850a5adde1dddeeb972b3757f80",
+   "size": 75758
+  },
+  "clock/tai2tt_bipm2023.clk": {
+   "lazy": false,
+   "sha256": "8a6f7524e27c187475d09c90e31cdbc4bda8f0547109555bde0ccaa9415578fe",
+   "size": 76759
+  },
+  "clock/tai2tt_bipm2024.clk": {
+   "lazy": false,
+   "sha256": "ec071a094fef0e67a9ed5941b7b13f7ae892047ee92744ef7c78d100d48a8118",
+   "size": 80566
+  },
+  "clock/tai2tt_bipm92.clk": {
+   "lazy": false,
+   "sha256": "299edb1b6a9166f5d7228979120e2190fccc3b0060d4c4c19738510930d74b05",
+   "size": 12722
+  },
+  "clock/tai2tt_tai.clk": {
+   "lazy": false,
+   "sha256": "46161bbb915b3b4fa4e910f327833795df3950410b18e01cd6118648dff8699a",
+   "size": 100
+  },
+  "clock/tid2nist.clk": {
+   "lazy": false,
+   "sha256": "bfa0b852aa00203a950e099ef694eafe86a5750f4987f97014a6122f94226cf7",
+   "size": 8264
+  },
+  "clock/time_ao.dat": {
+   "lazy": false,
+   "sha256": "fed65c81567380860351f1f616a9c36c5d444d3dce0df11aab73df424068c80e",
+   "size": 456936
+  },
+  "clock/time_bonn_new.dat": {
+   "lazy": false,
+   "sha256": "f1a0ddf420a26e8beb800318d161ce48638bd96988f9d2b5d36cef0e9e6a9105",
+   "size": 106435
+  },
+  "clock/time_gbt.dat": {
+   "lazy": false,
+   "sha256": "a65886f1308069b362d2ef5657485045f80d4617a96db3b53a058c09a52e510b",
+   "size": 319220
+  },
+  "clock/ut1.dat": {
+   "lazy": false,
+   "sha256": "3b1efbb2228df4febaff48bcd2e459ca21a6cdb081fab92bf591110be8b35437",
+   "size": 38850
+  },
+  "clock/utc2tai.clk": {
+   "lazy": false,
+   "sha256": "cade8c0b65ad37682e8e265a10e7587454faf9c5a1d77009458daacf940847bf",
+   "size": 3089
+  },
+  "clock/utc2ut1.clk": {
+   "lazy": false,
+   "sha256": "eeec70d9ec426846e1d17a786187cda191f87a85421c3bd1de7d85b8712eb4b1",
+   "size": 242540
+  },
+  "clock/vla2gps.clk": {
+   "lazy": false,
+   "sha256": "46d7568b65f742610ac4f7f4efc52881af08f68928a8d6384e84253e9d0231d6",
+   "size": 88382
+  },
+  "clock/vla2nist.clk": {
+   "lazy": false,
+   "sha256": "62ba0962620250c7c0df8a4a8df40ade041424cf67adc453db92b7a3668b76b6",
+   "size": 669
+  },
+  "clock/wsrt2gps.clk": {
+   "lazy": false,
+   "sha256": "72f512aa3c5f26b434708ebdd1b62718145f52e77d7ac2cc03628203ec296319",
+   "size": 190939
+  },
+  "earth/README": {
+   "lazy": false,
+   "sha256": "0701a293481d3ca21889a07d99f9e402cfa9bb6c8ced79a53c27f088775870bf",
+   "size": 194
+  },
+  "earth/eopc04_IAU2000.62-now": {
+   "lazy": false,
+   "sha256": "c9fac7ad99cb7cd5d584b53c464903995bb11a7e8903d59cfd1a4ffcd505bb63",
+   "size": 3632889
+  },
+  "earth/update_eop.sh": {
+   "lazy": false,
+   "sha256": "f0e096edeca7c2fb37c8ebfd90742bf940896b34e5f53a729ef9bc5f8c4bf77c",
+   "size": 268
+  },
+  "ephemeris/DE200.1950.2050": {
+   "lazy": true,
+   "sha256": "94f5ce62288f030b908db6f8b398e792c1ee276207760dd78af25c1b11d61d0e",
+   "size": 7559552
+  },
+  "ephemeris/DE405.1950.2050": {
+   "lazy": true,
+   "sha256": "86786f07aeddc1c5b6ddb24d8c65930803458938c6a2f920e8ea72a86da7479c",
+   "size": 9316736
+  },
+  "ephemeris/DE414.1960.2020": {
+   "lazy": true,
+   "sha256": "df3b193d959e1df1a5756bcf0c1da567a7c7781d2e7584e7b97e97af5dceacc4",
+   "size": 5603072
+  },
+  "ephemeris/DE418.1950.2050": {
+   "lazy": true,
+   "sha256": "d64bc488f1cb3f285cb7e66db90d88f9a5edc8a71608f321614df826a002c256",
+   "size": 13966960
+  },
+  "ephemeris/DE421.1950.2050": {
+   "lazy": true,
+   "sha256": "5a52b3f41a7a95697aa9b8db4798fe52c1e951eabe5740a51ad8bac8decedaf0",
+   "size": 13966960
+  },
+  "ephemeris/DE430.1950.2050": {
+   "lazy": true,
+   "sha256": "530f8cf73ac677d110f1c2b869905a0c8f0026b37164863a0ffc218d9ba7e7ab",
+   "size": 9316736
+  },
+  "ephemeris/DE435.1950.2050": {
+   "lazy": true,
+   "sha256": "8ac35a8144458ac1c1e29350d6c66612bf6c740a67540bbf52e37e5340c59c74",
+   "size": 9316736
+  },
+  "ephemeris/DE436.1950.2050": {
+   "lazy": true,
+   "sha256": "9c47f4bef43e0369518f1e0d58207aebb69eeae9401a55b6d98503987fced6c1",
+   "size": 9316736
+  },
+  "ephemeris/DE438.1950.2050": {
+   "lazy": true,
+   "sha256": "1e742d71d8d4dc5a42d6275b44a11c41967f27105ad6872f4f1df1618dc7d083",
+   "size": 9316736
+  },
+  "ephemeris/DE440.1950.2050": {
+   "lazy": true,
+   "sha256": "2efb30a7f75f2e1e4ac9f20eb9278fa290794fdb488d18bbcd1be53f8037d022",
+   "size": 9316736
+  },
+  "ephemeris/INPOP06": {
+   "lazy": true,
+   "sha256": "93337ecae74e5bfb51ce9bafd1dd6d2853ef3f9bcfbcea3ea6bc3e70ec287f4a",
+   "size": 17589376
+  },
+  "ephemeris/TDB.1950.2050": {
+   "lazy": false,
+   "sha256": "efde871622dc01df4d36df50421f0a5f6cec67707ebe57654c12e2abc63802b7",
+   "size": 146112
+  },
+  "ephemeris/TIMEEPH_short.te405": {
+   "lazy": false,
+   "sha256": "a455fe86dd66c173ebb5a58a6fe12f65b3e9c21c2000be235b669f84d5561565",
+   "size": 1759184
+  },
+  "observatory/aliases": {
+   "lazy": false,
+   "sha256": "a5678d9a6028d07f30d022e7e8e436d65ef9b590cf8c6c04d7b27167ce975a03",
+   "size": 791
+  },
+  "observatory/observatories.dat": {
+   "lazy": false,
+   "sha256": "64c718b333d91651315fd6333ab266521099c0ee0120c1c2e2a6a4b91d6f33d1",
+   "size": 10633
+  },
+  "observatory/oldcodes.dat": {
+   "lazy": false,
+   "sha256": "ca6ed52348eee26e4c0f17424bf1aa30b3082b77f2c8dc8784d63085ba905e09",
+   "size": 988
+  },
+  "observatory/tempo.aliases": {
+   "lazy": false,
+   "sha256": "22eaefdfb8ea136bdef3c46dd54f7a9b0abce1dcbbc73127b24d436f949e9a05",
+   "size": 613
+  },
+  "plugin_data/plk_setup.dat": {
+   "lazy": false,
+   "sha256": "1ef7a485be74e0d21da8a362dbb5599fbe06a46a544d56cc88fc34e9bdff9b17",
+   "size": 245
+  },
+  "plugin_data/plk_setup_image.dat": {
+   "lazy": false,
+   "sha256": "a33bfd7d654e064e57da019e278bb02a402d561745f6170a72428b5a77c192fb",
+   "size": 246
+  },
+  "plugin_data/plk_setup_image2.dat": {
+   "lazy": false,
+   "sha256": "185464d584d8b568d9b2d6218d2bc7680c9129ef62bf1e6d2c0217fcebf7f4e6",
+   "size": 246
+  },
+  "plugin_data/plk_setup_publish.dat": {
+   "lazy": false,
+   "sha256": "cdc03ca6b1a9b639ba07c749e17f2faaa4e95f34265df2b24cabb5ef4214992a",
+   "size": 242
+  },
+  "plugin_data/plk_setup_rnm.dat": {
+   "lazy": false,
+   "sha256": "e490c8f8621493e2d7dd57bc922157b97be9fd06db0dcb6a1f7bea916ce058e1",
+   "size": 257
+  },
+  "plugin_data/ppdot.lis": {
+   "lazy": false,
+   "sha256": "cfdbe150b6b20ae9ae61f7fc3bfe33a559c59bc79518e14d7c94733344fd5645",
+   "size": 29181
+  },
+  "solarWindModel/CT1821.dat": {
+   "lazy": false,
+   "sha256": "bfb63856970e495319b99a0fe9e7596cac3528f7a170163399db8906a4377061",
+   "size": 20659
+  },
+  "solarWindModel/CT1822.dat": {
+   "lazy": false,
+   "sha256": "b5dcec1e1e2fd10f2225079b09556e53c5bec7d0e31b96f01de0c6af7cd78bc0",
+   "size": 20659
+  },
+  "solarWindModel/CT1823.dat": {
+   "lazy": false,
+   "sha256": "c4f9e929615ebe56d329559666daf8d42139f0f5ab366713b9715ffa4582ace1",
+   "size": 20659
+  },
+  "solarWindModel/CT1824.dat": {
+   "lazy": false,
+   "sha256": "c6bbb7e4219784ec680dbdbc08ebe28c6319a07c7e4aa105a2a7f8425d86d0f5",
+   "size": 20659
+  },
+  "solarWindModel/CT1825.dat": {
+   "lazy": false,
+   "sha256": "54231a97f4530206ed3e05286500512fc71116a8905ac9da010356ce1700810b",
+   "size": 20659
+  },
+  "solarWindModel/CT1826.dat": {
+   "lazy": false,
+   "sha256": "1c6f08e00de2bc4f394563f7ebe63f8af5fabdd062b44d70c404c628a7ac703b",
+   "size": 20659
+  },
+  "solarWindModel/CT1834.dat": {
+   "lazy": false,
+   "sha256": "52112c7f392405c136433e0f41833a229036b0dde7ca6015c4d035231fc9ad00",
+   "size": 20659
+  },
+  "solarWindModel/CT1835.dat": {
+   "lazy": false,
+   "sha256": "6e7923591fc1a6d5c5e238e9e86143f8ee4913b58907ad798d180381496e5a18",
+   "size": 20659
+  },
+  "solarWindModel/CT1836.dat": {
+   "lazy": false,
+   "sha256": "a990c6841664d4685d4cb13e44551a68291a0e57937bd232baf65798bd0e5608",
+   "size": 20659
+  },
+  "solarWindModel/CT1837.dat": {
+   "lazy": false,
+   "sha256": "ed60a43ca4944946153e3c19130fb14a7c4e5802ef5b1b59a835f3e1f7f4622b",
+   "size": 20659
+  },
+  "solarWindModel/CT1838.dat": {
+   "lazy": false,
+   "sha256": "110e4def0a1c7bdf61ab7575516e8efc64958de70865f462297a1456159c3e73",
+   "size": 20659
+  },
+  "solarWindModel/CT1846.dat": {
+   "lazy": false,
+   "sha256": "a0825d5c3a673f9317a6f141abd6ed0de60159a98a42097674ab3e4561645fd1",
+   "size": 20659
+  },
+  "solarWindModel/CT1847.dat": {
+   "lazy": false,
+   "sha256": "d60fb3aa4c30e9e1cc52b77f6a9a13dfbae2ed802654246d239c1ed577fdda0c",
+   "size": 20659
+  },
+  "solarWindModel/CT1848.dat": {
+   "lazy": false,
+   "sha256": "4b2c8e48ad092cb08fe384d83a2cd5c5a918092630d2f8faa4d83bd285da8b43",
+   "size": 20659
+  },
+  "solarWindModel/CT1849.dat": {
+   "lazy": false,
+   "sha256": "157053ec256ea1d0e1b44b105be7b229ed9bdaf0fad844ead33363aa424ed372",
+   "size": 20659
+  },
+  "solarWindModel/CT1850.dat": {
+   "lazy": false,
+   "sha256": "d8cc5c273cf39170314f55d5debd3a7a904daa1453a60dce49352372b01f07fd",
+   "size": 20659
+  },
+  "solarWindModel/CT1851.dat": {
+   "lazy": false,
+   "sha256": "d65c4344324de4acb2b0abf9c7317477543b71e5adbf16f3cd6bc636ca445744",
+   "size": 20659
+  },
+  "solarWindModel/CT1852.dat": {
+   "lazy": false,
+   "sha256": "0a923c99e0d0702f03ce2a75f707afa054adf1642bfcdedab1ea09c442891b34",
+   "size": 20659
+  },
+  "solarWindModel/CT1859.dat": {
+   "lazy": false,
+   "sha256": "e8c5b8c6a331eb29f6fe95bcd6aa89da867a803c7108ab1923ebd2f101a7a6cb",
+   "size": 20659
+  },
+  "solarWindModel/CT1860.dat": {
+   "lazy": false,
+   "sha256": "82f12eb00ddbf614701a1314471276ae3150339251c58e74e235282586c40f54",
+   "size": 20659
+  },
+  "solarWindModel/CT1861.dat": {
+   "lazy": false,
+   "sha256": "67c1585c145dbb85d531fa0af33d8cda843cec1a49aca05b50ebe19d5c14fcf5",
+   "size": 20659
+  },
+  "solarWindModel/CT1862.dat": {
+   "lazy": false,
+   "sha256": "80aa8dd23d37e4a010739161cfc1ba1e86c8a06662a76b9463bf1ccf51108b4d",
+   "size": 20659
+  },
+  "solarWindModel/CT1863.dat": {
+   "lazy": false,
+   "sha256": "69be5aaa4bc953419e9eaa82bc7b2210d3f6c177baabc15e2906a10dcf94fe10",
+   "size": 20659
+  },
+  "solarWindModel/CT1864.dat": {
+   "lazy": false,
+   "sha256": "66f54b8b4f20d08a1395dd1522a71107930fdc77c6c911bb1687674516ef28b9",
+   "size": 20659
+  },
+  "solarWindModel/CT1865.dat": {
+   "lazy": false,
+   "sha256": "87f94454d753521bdbea9217e9fbe74af3e45dae1e710d5ecb91e377133f9df9",
+   "size": 20659
+  },
+  "solarWindModel/CT1866.dat": {
+   "lazy": false,
+   "sha256": "0fec7d9909b8a4f34d17e88d3243f8c898d16c424d195cce1915bfdac5114a92",
+   "size": 20659
+  },
+  "solarWindModel/CT1990.dat": {
+   "lazy": false,
+   "sha256": "777f884292a33bd472a3af8d2e206d075561e41b17ecb8ead1f22804f7c0a56e",
+   "size": 20659
+  },
+  "solarWindModel/CT1991.dat": {
+   "lazy": false,
+   "sha256": "c222e5cafd997b9a34b86bd774fb121f6c2ee2464ede2f276e02b415a3a26f33",
+   "size": 20659
+  },
+  "solarWindModel/CT1992.dat": {
+   "lazy": false,
+   "sha256": "7d72afc94d066d4f93554941608097aabd2d252a659386ddcd7d878fbdc80d73",
+   "size": 20659
+  },
+  "solarWindModel/CT1993.dat": {
+   "lazy": false,
+   "sha256": "69b359c4b1e249984e01685d29669ceca3d0a67ff94d4c3ffad19ed6a648877a",
+   "size": 20659
+  },
+  "solarWindModel/CT1994.dat": {
+   "lazy": false,
+   "sha256": "41ef1ef8207c585876457547e657d8a98015937722cb842ee261b426bc68b970",
+   "size": 20659
+  },
+  "solarWindModel/CT1995.dat": {
+   "lazy": false,
+   "sha256": "2331326350a7b4f6194bc2f80526ad8744d27566d36f8f7880273008901762f5",
+   "size": 20659
+  },
+  "solarWindModel/CT1996.dat": {
+   "lazy": false,
+   "sha256": "b7cb2bb8e62b53c8aee0e6e87ae299f1a78aeb6201e667a216c935dba5508f71",
+   "size": 20659
+  },
+  "solarWindModel/CT1997.dat": {
+   "lazy": false,
+   "sha256": "e5261e9df1d936eb7a4d5aada93cbbaa9fa7fe64dbfca4ed5966de513553273a",
+   "size": 20659
+  },
+  "solarWindModel/CT1998.dat": {
+   "lazy": false,
+   "sha256": "6be7f7b10a42d62d9c5671604351076f881021082524a883d1a665053de9b22a",
+   "size": 20659
+  },
+  "solarWindModel/CT1999.dat": {
+   "lazy": false,
+   "sha256": "1c78a09d31d91ee8c06f7332e2fb17f53df44bce02f5f303ca0c3b0354cd2465",
+   "size": 20659
+  },
+  "solarWindModel/CT2000.dat": {
+   "lazy": false,
+   "sha256": "e7d70fe3dc51e3a7bdca259e7b37b14ea18dd23ba69d68e6fc88845dc0749743",
+   "size": 20659
+  },
+  "solarWindModel/CT2001.dat": {
+   "lazy": false,
+   "sha256": "f03a5c29e0115ca152dce5084d9295998d1fe780e91f1e66a16a75ba8eeb9bb9",
+   "size": 20659
+  },
+  "solarWindModel/CT2002.dat": {
+   "lazy": false,
+   "sha256": "f8d896a4871ff693b0203467676bac2ce1514d9611852be21f54d4fc158c7fff",
+   "size": 20659
+  },
+  "solarWindModel/CT2003.dat": {
+   "lazy": false,
+   "sha256": "0d143f1663f69d58d469ebbb63928cdf97047fc8800f47aa33d01204e2ebe635",
+   "size": 20659
+  },
+  "solarWindModel/CT2004.dat": {
+   "lazy": false,
+   "sha256": "6724344cc9db92191b197754703471a62212a9962cb604f00b286f2f4de1ddee",
+   "size": 20659
+  },
+  "solarWindModel/CT2005.dat": {
+   "lazy": false,
+   "sha256": "c619334f141bee83ac9395de97f13c4f47659fa229e6ccb3ba222620fec4da88",
+   "size": 20659
+  },
+  "solarWindModel/CT2006.dat": {
+   "lazy": false,
+   "sha256": "cc1a8f7bcc9b8f666fdba30d3c92c14982db2887f665cd452e363960125c0277",
+   "size": 20659
+  },
+  "solarWindModel/CT2007.dat": {
+   "lazy": false,
+   "sha256": "213fae66f06461b5037ac760832c0b25b30d805737b502dfd1f585fa03e9498d",
+   "size": 20659
+  },
+  "solarWindModel/CT2008.dat": {
+   "lazy": false,
+   "sha256": "2dab23193c2ac1577bdf19bca8410b8326c0968b8e6f9a0ac55900f13e123b68",
+   "size": 20659
+  },
+  "solarWindModel/CT2009.dat": {
+   "lazy": false,
+   "sha256": "d51d53964b90862e8fe9dda48ec18c522490c099d9343fbc3ea7c8d31c9bc6bd",
+   "size": 20659
+  },
+  "solarWindModel/CT2010.dat": {
+   "lazy": false,
+   "sha256": "205ee599c221a2f92a9885625e3f4d2a59322dafe21144a6f756971e27ccc97c",
+   "size": 20659
+  },
+  "solarWindModel/CT2011.dat": {
+   "lazy": false,
+   "sha256": "9a3c3465a51644e433aaae5e56d2380519dc17f5ae7b9e3d4832d418c5620ee7",
+   "size": 20659
+  },
+  "solarWindModel/CT2012.dat": {
+   "lazy": false,
+   "sha256": "15a5d2b69a6f34f44121ffe2491cd3106edba2803cf943ea0bef2113cf3453a3",
+   "size": 20659
+  },
+  "solarWindModel/CT2013.dat": {
+   "lazy": false,
+   "sha256": "e6ebe5bca28e0e9eef88f292eba6c1bb9c7d77e40a9fe0f5238318ab26dc4a82",
+   "size": 20659
+  },
+  "solarWindModel/CT2014.dat": {
+   "lazy": false,
+   "sha256": "a83c2c8ee26c4b135308b27ab9d188c4e0439e86aa81d1ac7a211a40e925b269",
+   "size": 20659
+  },
+  "solarWindModel/CT2015.dat": {
+   "lazy": false,
+   "sha256": "beca3d04d2756fd64db10f0db3d9f206c41e1ee1440e90d511a382c9491280fb",
+   "size": 20659
+  },
+  "solarWindModel/CT2016.dat": {
+   "lazy": false,
+   "sha256": "1af3c345b82ed60c0124d46650bf0b3cdb5b7effb48a4f1fa769f4f0f670e24d",
+   "size": 20659
+  },
+  "solarWindModel/CT2017.dat": {
+   "lazy": false,
+   "sha256": "71579c4228eafaa89d73b242157cb0928751787cfc0b32ab08c1f6f264a3f183",
+   "size": 20659
+  },
+  "solarWindModel/CT2018.dat": {
+   "lazy": false,
+   "sha256": "e3aad34bece7aa419efe50e0ee25315490ad90a1b0955a67679bb8f5e2ad961f",
+   "size": 20659
+  },
+  "solarWindModel/CT2019.dat": {
+   "lazy": false,
+   "sha256": "b0ffcd6e42db3e8ba04cfa24446c41a7a660757da11d697dc4b4ad5117d2b966",
+   "size": 20659
+  },
+  "solarWindModel/CT2020.dat": {
+   "lazy": false,
+   "sha256": "34127031a6afed33fa2e12c6015b6b8dc16d463e25db4f31e914740d90a47c95",
+   "size": 20659
+  },
+  "solarWindModel/CT2021.dat": {
+   "lazy": false,
+   "sha256": "18c138b392572b3b8df5163080be80a3e712a2810889b7008ec2cb7cd0deb5c5",
+   "size": 20659
+  },
+  "solarWindModel/CT2022.dat": {
+   "lazy": false,
+   "sha256": "cf8607ecc00643d2e264bcabf976737f5d58f431fd076bc33d1caacd7f4bc229",
+   "size": 20659
+  },
+  "solarWindModel/CT2023.dat": {
+   "lazy": false,
+   "sha256": "22580e637e124705d417a932470aaec85dd6febc1a5637f25c3985195d65751e",
+   "size": 20659
+  },
+  "solarWindModel/CT2024.dat": {
+   "lazy": false,
+   "sha256": "61fbe61ae320626428a1397a4af3737c2297c0762e48889819d91e0b20e66e90",
+   "size": 20659
+  },
+  "solarWindModel/CT2025.dat": {
+   "lazy": false,
+   "sha256": "bc27f12fa939c45d95d8a3ddfa4738e0133bcce61c3c419ff67416863d77678a",
+   "size": 20659
+  },
+  "solarWindModel/CT2026.dat": {
+   "lazy": false,
+   "sha256": "ab4e67d5b18e00fd5247cb27245fa96a97fde1fa8da88f7ca8820d9232164d0c",
+   "size": 20659
+  },
+  "solarWindModel/CT2027.dat": {
+   "lazy": false,
+   "sha256": "612d96e11fd3abc3fa4997b7d223b774605f0bd14f7f0f7831d806f4dade4434",
+   "size": 20659
+  },
+  "solarWindModel/CT2028.dat": {
+   "lazy": false,
+   "sha256": "3aee5cfd1d7cbb5650088e88692d4ef9a4697eced3bf3df44be9dea122d29598",
+   "size": 20659
+  },
+  "solarWindModel/CT2029.dat": {
+   "lazy": false,
+   "sha256": "3937a80963f5c1590eaa186a3ae4464a2aa6c988ee9dfd32f1962e66081eca0d",
+   "size": 20659
+  },
+  "solarWindModel/CT2030.dat": {
+   "lazy": false,
+   "sha256": "74f314a25ce04647cf3342af6d6c2c04814753617a0b7c2ff495fcd5b65675fe",
+   "size": 20659
+  },
+  "solarWindModel/CT2031.dat": {
+   "lazy": false,
+   "sha256": "521119a845e1508adeb0964da08189d67d61c5db25d47e71826aed1dbb458a5a",
+   "size": 20659
+  },
+  "solarWindModel/CT2032.dat": {
+   "lazy": false,
+   "sha256": "716769456e037cbbeef2b02291bbb7c132b0d9fa75bde7a3c3e7414a709cd887",
+   "size": 20659
+  },
+  "solarWindModel/CT2033.dat": {
+   "lazy": false,
+   "sha256": "31602eaf54ad6bffd33a20f7e9505b31e826c73c93f9196306746453dfeb76aa",
+   "size": 20659
+  },
+  "solarWindModel/CT2034.dat": {
+   "lazy": false,
+   "sha256": "29e4e845bc2bc628e7ca6c841ee66637f7c49200efcb6f9871dc5418ca99c68e",
+   "size": 20659
+  },
+  "solarWindModel/CT2035.dat": {
+   "lazy": false,
+   "sha256": "fd3c82344c9dcdc8abc6accdcbae033101b9e542e443eb81ed053edfbd84565b",
+   "size": 20659
+  },
+  "solarWindModel/CT2036.dat": {
+   "lazy": false,
+   "sha256": "6eda316f5201aa5bc8ab7c8c24270d209e6e9f6382b613ef5eae4a6105c7db14",
+   "size": 20659
+  },
+  "solarWindModel/CT2037.dat": {
+   "lazy": false,
+   "sha256": "f5afccd21dfa37cedd24c3eca159ccbf3a8d4bef054195a483dfa7f7181e436a",
+   "size": 20659
+  },
+  "solarWindModel/CT2038.dat": {
+   "lazy": false,
+   "sha256": "70721900745c9e21e3f6ba714a13fb3d9cf83a0ab028ee7d0e1325f72a234684",
+   "size": 20659
+  },
+  "solarWindModel/CT2039.dat": {
+   "lazy": false,
+   "sha256": "d95937d3deed4c3fbda492f6e1a799f8eb6afd766e9b117ad1becfb47837f3d4",
+   "size": 20659
+  },
+  "solarWindModel/CT2040.dat": {
+   "lazy": false,
+   "sha256": "3fa69aa3b72f26ee33095ca3e9ab106e78e4fdcc9ec4e0eb2ed0dae66977b77a",
+   "size": 20659
+  },
+  "solarWindModel/CT2041.dat": {
+   "lazy": false,
+   "sha256": "4180cf2987f9c9ac003c6808ae8b8a9a7308edba831ebfabb2b745748e7f6b37",
+   "size": 20659
+  },
+  "solarWindModel/CT2042.dat": {
+   "lazy": false,
+   "sha256": "0e5f168033c258b7c3bc0cf600c9f7c8f41b861a26e6b30a94668f2eb11c4b0f",
+   "size": 20659
+  },
+  "solarWindModel/CT2043.dat": {
+   "lazy": false,
+   "sha256": "35e5bc080d76f00d0f20174c3904f030a78ce9138c12e0f0220eb2066d59d773",
+   "size": 20659
+  },
+  "solarWindModel/CT2044.dat": {
+   "lazy": false,
+   "sha256": "d7c4c86fc6f267e0055ff326344d1aedd333f59080280f0561bd3c537629927c",
+   "size": 20659
+  },
+  "solarWindModel/CT2045.dat": {
+   "lazy": false,
+   "sha256": "d0e5393e51e050209551a11f5b2428cf5f7cf51011428ae849de830e5dacc058",
+   "size": 20659
+  },
+  "solarWindModel/CT2046.dat": {
+   "lazy": false,
+   "sha256": "baeb102626e7e23f4d56a074ba89641b2b37184312876213c9bc07da26e001f1",
+   "size": 20659
+  },
+  "solarWindModel/CT2047.dat": {
+   "lazy": false,
+   "sha256": "198ab62848c3c79d552f96b645f65fbc8be1d357b8ed7f04306ba73406632d4b",
+   "size": 20659
+  },
+  "solarWindModel/CT2048.dat": {
+   "lazy": false,
+   "sha256": "7e2f516c67d0ed0423d7303813738e8eddda96d37bc7afa6a0aa44769cac2d52",
+   "size": 20659
+  },
+  "solarWindModel/CT2049.dat": {
+   "lazy": false,
+   "sha256": "537f2f6f4a90ccc6653f5e055f43e7696b6c6bd57721cb77cf6ad47890f3d583",
+   "size": 20659
+  },
+  "solarWindModel/CT2050.dat": {
+   "lazy": false,
+   "sha256": "2ef33da1214665d906123b3a993d3499d541aee59798ee803b2fccd583af784f",
+   "size": 20659
+  },
+  "solarWindModel/CT2051.dat": {
+   "lazy": false,
+   "sha256": "1d4a51bf61a694ba902cfb43bb36706838d223f8ff6d6e22cdcb28180181cd70",
+   "size": 20659
+  },
+  "solarWindModel/CT2052.dat": {
+   "lazy": false,
+   "sha256": "f658b92cc60d5bf221c1bee258b6e545c035fe679ea37fec51fcd78cb890075a",
+   "size": 20659
+  },
+  "solarWindModel/CT2053.dat": {
+   "lazy": false,
+   "sha256": "9e7b11187df73f6e3ca136042918dbb392a73251393fc085ff657af987b8a415",
+   "size": 20659
+  },
+  "solarWindModel/CT2054.dat": {
+   "lazy": false,
+   "sha256": "52fb3fcc36ee25a2778f3266897d499cf20c2baa934e6f4e99b004ab5c026e82",
+   "size": 20659
+  }
+ },
+ "tempo2_tag": "2026.04.1"
+}

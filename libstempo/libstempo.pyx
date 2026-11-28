@@ -3,6 +3,8 @@
 import os, sys, math, re, time
 from packaging import version
 
+from libstempo import _runtime
+
 import collections
 from collections import OrderedDict
 
@@ -761,6 +763,9 @@ cdef class tempopulsar:
         if ephem is not None:
             self.ephemeris = ephem
 
+        # download the planetary ephemeris on first use if the runtime is libstempo's cache
+        _runtime.ensure_file(string(self.psr[0].JPL_EPHEMERIS))
+
         # preprocess the data
 
         preProcess(self.psr,self.npsr,0,NULL)
@@ -1212,6 +1217,7 @@ cdef class tempopulsar:
             else:
                 dates = '1950.2050'
             oldstyle = os.environ['TEMPO2'] + '/ephemeris/{0}.{1}'.format(value, dates)
+            _runtime.ensure_file(oldstyle)
             if os.path.isfile(oldstyle):
                 seteph(oldstyle,False)
                 return

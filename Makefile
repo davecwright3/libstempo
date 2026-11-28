@@ -42,6 +42,13 @@ lint:
 	black --check .
 	flake8 .
 
+runtime-manifest: ## regenerate libstempo/tempo2_runtime.json for the tempo2 tag in install_tempo2.sh
+	@set -e; tag=$$(sed -n 's/^TEMPO2_TAG=//p' install_tempo2.sh); tmp=$$(mktemp -d); \
+	trap 'rm -rf $$tmp' EXIT; \
+	curl -fsSL -o $$tmp/tempo2.tar.gz https://bitbucket.org/psrsoft/tempo2/get/$$tag.tar.gz; \
+	tar xzf $$tmp/tempo2.tar.gz -C $$tmp; \
+	python3 tools/make_runtime_manifest.py $$tmp/psrsoft-tempo2-*
+
 clean: clean-build clean-pyc clean-test ## remove all build, test, coverage and Python artifacts
 
 clean-build: ## remove build artifacts

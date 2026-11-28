@@ -50,6 +50,7 @@ dependencies = [
     "scipy",
     "matplotlib",
     "ephem",
+    "platformdirs",
 ]
 
 [project.optional-dependencies]
@@ -71,6 +72,14 @@ dev = [
 [tool.setuptools]
 include-package-data = true
 
+[tool.setuptools.package-data]
+# TEMPO2_COPYING exists only in wheel builds, which bundle the GPL tempo2 library
+libstempo = ["tempo2_runtime.json", "TEMPO2_COPYING"]
+
+[tool.setuptools.exclude-package-data]
+# needed to build the extension, not to run it
+libstempo = ["*.pyx", "*.cpp", "*.h"]
+
 [tool.setuptools.packages.find]
 include = [
     "libstempo*",
@@ -78,6 +87,48 @@ include = [
 
 [tool.setuptools_scm]
 write_to = "libstempo/_version.py"
+
+[tool.cibuildwheel]
+# wheels bundle tempo2, built by install_tempo2.sh; the runtime data is downloaded on first use
+build = ["cp39-*", "cp310-*", "cp311-*", "cp312-*", "cp313-*", "cp314-*"]
+build-verbosity = 1
+# matplotlib, astropy and pyerfa publish no musllinux aarch64 wheels, so pip cannot install
+# libstempo's dependencies there without compiling them
+skip = ["*-musllinux_aarch64"]
+test-extras = ["astropy"]
+test-requires = ["pytest"]
+# fetch only the files every run needs, so the tests also exercise the on-demand ephemeris download
+test-command = "python -m libstempo.fetch_runtime && pytest -q {project}/tests"
+
+[tool.cibuildwheel.linux]
+before-all = [
+    "yum install -y autoconf automake libtool gcc-gfortran",
+    "bash install_tempo2.sh /opt/tempo2",
+    "cp /opt/tempo2/share/doc/tempo2/COPYING libstempo/TEMPO2_COPYING",
+]
+environment = { TEMPO2_PREFIX = "/opt/tempo2" }
+repair-wheel-command = "LD_LIBRARY_PATH=/opt/tempo2/lib auditwheel repair --strip -w {dest_dir} {wheel}"
+
+[[tool.cibuildwheel.overrides]]
+select = "*-musllinux*"
+before-all = [
+    "apk add autoconf automake libtool gfortran bash curl",
+    "bash install_tempo2.sh /opt/tempo2",
+    "cp /opt/tempo2/share/doc/tempo2/COPYING libstempo/TEMPO2_COPYING",
+]
+
+[tool.cibuildwheel.macos]
+# tempo2 needs a long double wider than 64 bits, which arm64 macOS does not have
+archs = ["x86_64"]
+before-all = [
+    "brew install automake libtool gcc",
+    "sudo ln -sf \"$(brew --prefix gcc)/bin/gfortran-$(brew list --versions gcc | awk '{print $2}' | cut -d. -f1)\" /usr/local/bin/gfortran",
+    "./install_tempo2.sh $HOME/tempo2",
+    "cp $HOME/tempo2/share/doc/tempo2/COPYING libstempo/TEMPO2_COPYING",
+]
+# Homebrew's libgfortran targets the runner's macOS version
+environment = { TEMPO2_PREFIX = "$HOME/tempo2", MACOSX_DEPLOYMENT_TARGET = "15.0" }
+repair-wheel-command = "DYLD_LIBRARY_PATH=$HOME/tempo2/lib delocate-wheel --require-archs {delocate_archs} -w {dest_dir} -v {wheel}"
 
 [tool.black]
 line-length = 120

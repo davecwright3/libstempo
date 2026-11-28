@@ -1,4 +1,5 @@
 import os
+from . import _runtime
 from ._find_tempo2 import find_tempo2_runtime
 
 # Import sandbox functionality
@@ -9,9 +10,13 @@ from .tim_file_analyzer import TimFileAnalyzer  # noqa: F401
 TEMPO2_RUNTIME = os.getenv("TEMPO2")
 
 
-# if not try to find it and raise error otherwise
+# if not, a wheel downloads the runtime once into the user cache; a source install
+# looks for an installed tempo2 and raises an error otherwise
 if not TEMPO2_RUNTIME:
-    os.environ["TEMPO2"] = find_tempo2_runtime()
+    if _runtime.bundled_tempo2():
+        os.environ["TEMPO2"] = _runtime.ensure_base()
+    else:
+        os.environ["TEMPO2"] = find_tempo2_runtime()
 
 
 from libstempo.libstempo import *  # noqa F401,F402,F403
