@@ -92,6 +92,9 @@ write_to = "libstempo/_version.py"
 # wheels bundle tempo2, built by install_tempo2.sh; the runtime data is downloaded on first use
 build = ["cp39-*", "cp310-*", "cp311-*", "cp312-*", "cp313-*", "cp314-*"]
 build-verbosity = 1
+# matplotlib, astropy and pyerfa publish no musllinux aarch64 wheels, so pip cannot install
+# libstempo's dependencies there without compiling them
+skip = ["*-musllinux_aarch64"]
 test-extras = ["astropy"]
 test-requires = ["pytest"]
 # fetch only the files every run needs, so the tests also exercise the on-demand ephemeris download
